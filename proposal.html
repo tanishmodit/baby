@@ -1,24 +1,45 @@
+<!DOCTYPE html>
 <html>
 <head>
   <title>Will You Be My Girlfriend?</title>
   <style>
     body {
-      background-color: black;
-      color: white;
+      background: linear-gradient(to top right, #ffdde1, #ee9ca7);
+      color: #3c2a21;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
       text-align: center;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       padding: 50px;
+      overflow: hidden;
     }
     h1 {
-      font-size: 40px;
-      color: #FFD700;
-      margin-bottom: 30px;
+      font-size: 42px;
+      color: #ff4081;
     }
     button {
       padding: 15px 30px;
-      font-size: 18px;
       margin: 20px;
+      font-size: 18px;
       border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .yes {
+      background-color: #00e676;
+      color: white;
+    }
+    .no {
+      background-color: #ff1744;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>Will you be my girlfriend? 💖</h1>
+  <button class="yes" onclick="window.location.href='yes.html'">Yes 💕</button>
+  <button class="no" onclick="window.location.href='are-you-serious.html'">No 😢</button>
+</body>
+</html>
+
       border-radius: 10px;
       cursor: pointer;
     }
