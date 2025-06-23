@@ -1,12 +1,202 @@
+<!-- proposal.html -->
 <!DOCTYPE html>
 <html>
 <head>
   <title>Will You Be My Girlfriend?</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      text-align: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 50px;
+    }
+    h1 {
+      font-size: 40px;
+      color: #FFD700;
+      margin-bottom: 30px;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      margin: 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .yes {
+      background-color: #66ff99;
+      color: black;
+    }
+    .no {
+      background-color: #ff6666;
+      color: white;
+    }
+    .sunflower {
+      width: 100px;
+      margin-bottom: 30px;
+      animation: pulse 4s infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+  </style>
 </head>
-<body style="font-family: Arial; text-align: center; background-color: #fff0f5; padding: 50px;">
+<body>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Sunflower_sky_backdrop.jpg" class="sunflower">
   <h1>Will you be my girlfriend? 💖</h1>
-  <button onclick="window.location.href='yes.html'" style="padding: 10px 20px; margin: 10px; font-size: 16px; background-color: #66cc66; color: white;">Yes 💕</button>
-  <button onclick="window.location.href='are-you-serious.html'" style="padding: 10px 20px; margin: 10px; font-size: 16px; background-color: #ff6666; color: white;">No 😢</button>
+  <button class="yes" onclick="window.location.href='yes.html'">Yes 💕</button>
+  <button class="no" onclick="window.location.href='are-you-serious.html'">No 😢</button>
 </body>
 </html>
 
+<!-- yes.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>You Said Yes 💘</title>
+  <style>
+    body {
+      background-color: black;
+      color: #FFD700;
+      text-align: center;
+      padding: 50px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    h1 {
+      font-size: 42px;
+    }
+    p {
+      font-size: 20px;
+      max-width: 700px;
+      margin: 20px auto;
+    }
+    button {
+      padding: 12px 24px;
+      background-color: #FFD700;
+      color: black;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .sunflower {
+      width: 120px;
+      animation: spin 6s linear infinite;
+    }
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Sunflower_sky_backdrop.jpg" class="sunflower">
+  <h1>You said YES 💖</h1>
+  <p>
+    You just made my entire world glow brighter than the sun. I promise to always love you, support you, and never stop making you smile. This moment means everything to me, and so do you. 💍🌻
+  </p>
+  <form action="https://formsubmit.co/tanishmodi2009@gmail.com" method="POST">
+    <input type="hidden" name="_subject" value="She said YES!">
+    <input type="hidden" name="message" value="She said YES and accepted the proposal.">
+    <button type="submit">Send Confirmation 💌</button>
+  </form>
+</body>
+</html>
+
+<!-- are-you-serious.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Are You Serious? 😥</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 50px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    h1 {
+      font-size: 40px;
+      color: #ff9999;
+    }
+    button {
+      padding: 14px 28px;
+      margin: 20px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .yes {
+      background-color: #ff4d4d;
+      color: white;
+    }
+    .no {
+      background-color: #999999;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>Are you really saying no? 💔</h1>
+  <p>I need to know if you really meant it...</p>
+  <button class="no" onclick="window.location.href='reason.html'">No, I didn’t mean it 😓</button>
+  <button class="yes" onclick="window.location.href='reason.html'">Yes, I meant it 😔</button>
+</body>
+</html>
+
+<!-- reason.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Please Tell Me Why 💔</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 50px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    h1 {
+      font-size: 38px;
+      color: #ff6666;
+    }
+    textarea {
+      width: 80%;
+      height: 120px;
+      font-size: 16px;
+      margin-top: 20px;
+      border-radius: 8px;
+      padding: 10px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #ff6666;
+      color: white;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    p {
+      margin-top: 20px;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <h1>It's okay... but please tell me why 😔</h1>
+  <form action="https://formsubmit.co/tanishmodi2009@gmail.com" method="POST">
+    <input type="hidden" name="_subject" value="She said NO 💔">
+    <textarea name="reason" placeholder="Your reason..." required></textarea><br>
+    <button type="submit">Submit</button>
+  </form>
+  <p>Even if the answer hurts, I still thank you for your honesty. 🙏</p>
+</body>
+</html>
