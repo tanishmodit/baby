@@ -1,11 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Are You Serious? 😔</title>
+  <title>Are You Serious? 😥</title>
+  <style>
+    body {
+      background: linear-gradient(to top left, #ff9a9e, #fad0c4);
+      color: #4a2c2a;
+      text-align: center;
+      padding: 50px;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+    }
+    h1 {
+      font-size: 38px;
+      color: #c62828;
+    }
+    button {
+      padding: 14px 28px;
+      margin: 20px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .yes {
+      background-color: #e53935;
+      color: white;
+    }
+    .no {
+      background-color: #6d4c41;
+      color: white;
+    }
+  </style>
 </head>
-<body style="font-family: Arial; text-align: center; background-color: #fff5e6; padding: 50px;">
-  <h1>Are you serious? 😢</h1>
-  <button onclick="window.location.href='reason.html'" style="padding: 10px 20px; margin: 10px; font-size: 16px; background-color: #ffa64d; color: white;">No, just kidding 😅</button>
-  <button onclick="window.location.href='reason.html'" style="padding: 10px 20px; margin: 10px; font-size: 16px; background-color: #ff8533; color: white;">Yes 😞</button>
+<body>
+  <h1>Are you really saying no? 💔</h1>
+  <p>Tell me honestly... I’ll still respect your answer.</p>
+  <button class="no" onclick="window.location.href='reason.html'">No, I was kidding 😅</button>
+  <button class="yes" onclick="window.location.href='reason.html'">Yes, I meant it 😔</button>
 </body>
 </html>
